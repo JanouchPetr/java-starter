@@ -49,8 +49,8 @@ bootJar {
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter:${springBootVersion}"
-    compile 'javax.inject:javax.inject:1'
     testCompile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
+    compile 'javax.inject:javax.inject:1'
     testCompile "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
     testRuntime "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }

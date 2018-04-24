@@ -7,8 +7,12 @@ import javax.inject.Inject;
 @Component
 class FirstService {
 
+    private final SecondService secondService;
+
     @Inject
-    private SecondService secondService;
+    FirstService(SecondService secondService) {
+        this.secondService = secondService;
+    }
 
     String greet(String name) {
         return secondService.sayHello() + " " + name + "!";
